@@ -1,0 +1,112 @@
+[debug] [2024-04-30T18:12:41.544Z] ----------------------------------------------------------------------
+[debug] [2024-04-30T18:12:41.545Z] Command:       C:\Users\dipak\Desktop\NEWFOL~1\firebase-tools-instant-win.exe C:\Users\dipak\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase deploy
+[debug] [2024-04-30T18:12:41.546Z] CLI Version:   13.6.0
+[debug] [2024-04-30T18:12:41.546Z] Platform:      win32
+[debug] [2024-04-30T18:12:41.546Z] Node Version:  v18.5.0
+[debug] [2024-04-30T18:12:41.547Z] Time:          Tue Apr 30 2024 23:42:41 GMT+0530 (India Standard Time)
+[debug] [2024-04-30T18:12:41.547Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-30T18:12:41.598Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-30T18:12:41.599Z] > authorizing via signed-in user (dipakagarwal101505@gmail.com)
+[debug] [2024-04-30T18:12:41.599Z] [iam] checking project cloud-profiler-demo-399610 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-30T18:12:41.601Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions [none]
+[debug] [2024-04-30T18:12:41.601Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions x-goog-quota-user=projects/cloud-profiler-demo-399610
+[debug] [2024-04-30T18:12:41.601Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-30T18:12:43.312Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions 200
+[debug] [2024-04-30T18:12:43.312Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-30T18:12:43.313Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610 [none]
+[debug] [2024-04-30T18:12:44.065Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610 200
+[debug] [2024-04-30T18:12:44.066Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610 {"projectId":"cloud-profiler-demo-399610","projectNumber":"572657056042","displayName":"Cloud profiler demo","name":"projects/cloud-profiler-demo-399610","resources":{"hostingSite":"cloud-profiler-demo-399610","realtimeDatabaseInstance":"cloud-profiler-demo-399610-default-rtdb","storageBucket":"cloud-profiler-demo-399610.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_76ed96a6-ecbb-46d2-a4d8-66035c9cd424"}
+[debug] [2024-04-30T18:12:46.075Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites pageToken=&pageSize=10
+[debug] [2024-04-30T18:12:47.484Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites 200
+[debug] [2024-04-30T18:12:47.484Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites {"sites":[{"name":"projects/cloud-profiler-demo-399610/sites/accounting-toolkit","defaultUrl":"https://accounting-toolkit.web.app","appId":"1:572657056042:web:c33f028de2186d2692c653","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/booking-website","defaultUrl":"https://booking-website.web.app","appId":"1:572657056042:web:cca132ee3a5a950992c653","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610","defaultUrl":"https://cloud-profiler-demo-399610.web.app","appId":"1:572657056042:web:a95784619518744992c653","type":"DEFAULT_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/debichand-mohanlal","defaultUrl":"https://debichand-mohanlal.web.app","appId":"1:572657056042:web:04e78c001201941892c653","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/mytinyurl","defaultUrl":"https://mytinyurl.web.app","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/silversandservices","defaultUrl":"https://silversandservices.web.app","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/task-manager-memo","defaultUrl":"https://task-manager-memo.web.app","appId":"1:572657056042:web:90557b7f626ab37492c653","type":"USER_SITE"}]}
+[debug] [2024-04-30T18:12:47.485Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:572657056042:web:a95784619518744992c653/config [none]
+[debug] [2024-04-30T18:12:48.919Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:572657056042:web:a95784619518744992c653/config 200
+[debug] [2024-04-30T18:12:48.919Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:572657056042:web:a95784619518744992c653/config {"projectId":"cloud-profiler-demo-399610","appId":"1:572657056042:web:a95784619518744992c653","databaseURL":"https://cloud-profiler-demo-399610-default-rtdb.firebaseio.com","storageBucket":"cloud-profiler-demo-399610.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyDXef3y3j0J63NdHhxdn1mo-EneEal3DQE","authDomain":"cloud-profiler-demo-399610.firebaseapp.com","messagingSenderId":"572657056042","measurementId":"G-481VZRX0FE"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-30T18:12:53.225Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 [none]
+[debug] [2024-04-30T18:12:54.460Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 200
+[debug] [2024-04-30T18:12:54.461Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 {"name":"projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610","defaultUrl":"https://cloud-profiler-demo-399610.web.app","appId":"1:572657056042:web:a95784619518744992c653","type":"DEFAULT_SITE"}
+[info] You are using Node.js 18.5.0. For Next.js, Node.js version >= v18.17.0 is required.
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /_not-found/page
+[info]  • non-static component /[hash]/page
+[info] 
+[debug] [2024-04-30T18:12:56.214Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 [none]
+[debug] [2024-04-30T18:12:57.345Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 200
+[debug] [2024-04-30T18:12:57.345Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 {"name":"projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610","defaultUrl":"https://cloud-profiler-demo-399610.web.app","appId":"1:572657056042:web:a95784619518744992c653","type":"DEFAULT_SITE"}
+[debug] [2024-04-30T18:15:28.099Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:820:11)
+    at Object.execSync (node:child_process:891:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (C:\Users\dipak\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\frameworks\index.js:375:42)
+    at async deploy (C:\Users\dipak\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-04-30T18:27:38.613Z] ----------------------------------------------------------------------
+[debug] [2024-04-30T18:27:38.615Z] Command:       C:\Users\dipak\Desktop\NEWFOL~1\firebase-tools-instant-win.exe C:\Users\dipak\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase deploy
+[debug] [2024-04-30T18:27:38.615Z] CLI Version:   13.6.0
+[debug] [2024-04-30T18:27:38.615Z] Platform:      win32
+[debug] [2024-04-30T18:27:38.615Z] Node Version:  v18.5.0
+[debug] [2024-04-30T18:27:38.616Z] Time:          Tue Apr 30 2024 23:57:38 GMT+0530 (India Standard Time)
+[debug] [2024-04-30T18:27:38.616Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-30T18:27:38.673Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-30T18:27:38.674Z] > authorizing via signed-in user (dipakagarwal101505@gmail.com)
+[debug] [2024-04-30T18:27:38.674Z] [iam] checking project cloud-profiler-demo-399610 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-30T18:27:38.675Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions [none]
+[debug] [2024-04-30T18:27:38.675Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions x-goog-quota-user=projects/cloud-profiler-demo-399610
+[debug] [2024-04-30T18:27:38.676Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-30T18:27:40.417Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions 200
+[debug] [2024-04-30T18:27:40.417Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cloud-profiler-demo-399610:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-30T18:27:40.419Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610 [none]
+[debug] [2024-04-30T18:27:40.957Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610 200
+[debug] [2024-04-30T18:27:40.958Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610 {"projectId":"cloud-profiler-demo-399610","projectNumber":"572657056042","displayName":"Cloud profiler demo","name":"projects/cloud-profiler-demo-399610","resources":{"hostingSite":"cloud-profiler-demo-399610","realtimeDatabaseInstance":"cloud-profiler-demo-399610-default-rtdb","storageBucket":"cloud-profiler-demo-399610.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_76ed96a6-ecbb-46d2-a4d8-66035c9cd424"}
+[debug] [2024-04-30T18:27:42.858Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites pageToken=&pageSize=10
+[debug] [2024-04-30T18:27:44.107Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites 200
+[debug] [2024-04-30T18:27:44.107Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites {"sites":[{"name":"projects/cloud-profiler-demo-399610/sites/accounting-toolkit","defaultUrl":"https://accounting-toolkit.web.app","appId":"1:572657056042:web:c33f028de2186d2692c653","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/booking-website","defaultUrl":"https://booking-website.web.app","appId":"1:572657056042:web:cca132ee3a5a950992c653","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610","defaultUrl":"https://cloud-profiler-demo-399610.web.app","appId":"1:572657056042:web:a95784619518744992c653","type":"DEFAULT_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/debichand-mohanlal","defaultUrl":"https://debichand-mohanlal.web.app","appId":"1:572657056042:web:04e78c001201941892c653","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/mytinyurl","defaultUrl":"https://mytinyurl.web.app","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/silversandservices","defaultUrl":"https://silversandservices.web.app","type":"USER_SITE"},{"name":"projects/cloud-profiler-demo-399610/sites/task-manager-memo","defaultUrl":"https://task-manager-memo.web.app","appId":"1:572657056042:web:90557b7f626ab37492c653","type":"USER_SITE"}]}
+[debug] [2024-04-30T18:27:44.107Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:572657056042:web:a95784619518744992c653/config [none]
+[debug] [2024-04-30T18:27:45.548Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:572657056042:web:a95784619518744992c653/config 200
+[debug] [2024-04-30T18:27:45.549Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:572657056042:web:a95784619518744992c653/config {"projectId":"cloud-profiler-demo-399610","appId":"1:572657056042:web:a95784619518744992c653","databaseURL":"https://cloud-profiler-demo-399610-default-rtdb.firebaseio.com","storageBucket":"cloud-profiler-demo-399610.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyDXef3y3j0J63NdHhxdn1mo-EneEal3DQE","authDomain":"cloud-profiler-demo-399610.firebaseapp.com","messagingSenderId":"572657056042","measurementId":"G-481VZRX0FE"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-30T18:27:49.811Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 [none]
+[debug] [2024-04-30T18:27:50.916Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 200
+[debug] [2024-04-30T18:27:50.917Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 {"name":"projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610","defaultUrl":"https://cloud-profiler-demo-399610.web.app","appId":"1:572657056042:web:a95784619518744992c653","type":"DEFAULT_SITE"}
+[info] You are using Node.js 18.5.0. For Next.js, Node.js version >= v18.17.0 is required.
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /_not-found/page
+[info]  • non-static component /[hash]/page
+[info] 
+[debug] [2024-04-30T18:27:52.873Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 [none]
+[debug] [2024-04-30T18:27:54.040Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 200
+[debug] [2024-04-30T18:27:54.041Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610 {"name":"projects/cloud-profiler-demo-399610/sites/cloud-profiler-demo-399610","defaultUrl":"https://cloud-profiler-demo-399610.web.app","appId":"1:572657056042:web:a95784619518744992c653","type":"DEFAULT_SITE"}
+[debug] [2024-04-30T18:30:23.494Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:820:11)
+    at Object.execSync (node:child_process:891:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (C:\Users\dipak\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\frameworks\index.js:375:42)
+    at async deploy (C:\Users\dipak\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
