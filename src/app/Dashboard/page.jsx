@@ -24,43 +24,46 @@ async function getCards(currentUser) {
 
   return querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 }
+// const Dashboard = () => {
+//   const [cards, setCards] = React.useState([]);
+//   const { currentUser, userLoggedIn } = useAuth();
+//   if (!userLoggedIn) {
+//     window.location.href = '/';
+//     return;
+//   }
+//   React.useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const fetchedCards = await getCards(currentUser.uid);
+//         setCards(fetchedCards);
+//       } catch (error) {
+//         console.error('Error fetching cards:', error);
+//       }
+//     };
+
+//     fetchData();
+//   }, []);
+
+//   return (
+//     <Box
+//       sx={{
+//         width: '100%',
+//         maxWidth: 'xl',
+//         // marginLeft: '20px',
+//         // marginRight: '20px',
+//         padding: '10px',
+//       }}
+//     >
+//       <Masonry columns={4} spacing={2}>
+//         <KeepCard />
+//         {cards.map((card) => (
+//           <KeepCard card={card} />
+//         ))}
+//       </Masonry>
+//     </Box>
+//   );
+// };
 const Dashboard = () => {
-  const [cards, setCards] = React.useState([]);
-  const { currentUser, userLoggedIn } = useAuth();
-  if (!userLoggedIn) {
-    window.location.href = '/';
-    return;
-  }
-  React.useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const fetchedCards = await getCards(currentUser.uid);
-        setCards(fetchedCards);
-      } catch (error) {
-        console.error('Error fetching cards:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  return (
-    <Box
-      sx={{
-        width: '100%',
-        maxWidth: 'xl',
-        // marginLeft: '20px',
-        // marginRight: '20px',
-        padding: '10px',
-      }}
-    >
-      <Masonry columns={4} spacing={2}>
-        <KeepCard />
-        {cards.map((card) => (
-          <KeepCard card={card} />
-        ))}
-      </Masonry>
-    </Box>
-  );
+  return <div>hello</div>;
 };
 export default Dashboard;
