@@ -1,6 +1,6 @@
 'use client';
 import UploadFile from '@/component/UploadFile';
-const pricing = () => {
+const Pricing = () => {
   return (
     <div>
       <h1>Upload a File</h1>
@@ -8,4 +8,4 @@ const pricing = () => {
     </div>
   );
 };
-export default pricing;
+export default Pricing;

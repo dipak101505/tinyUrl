@@ -24,7 +24,7 @@ async function getCards(currentUser) {
 
   return querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 }
-const dashboard = () => {
+const Dashboard = () => {
   const [cards, setCards] = React.useState([]);
   const { currentUser, userLoggedIn } = useAuth();
   if (!userLoggedIn) {
@@ -63,4 +63,4 @@ const dashboard = () => {
     </Box>
   );
 };
-export default dashboard;
+export default Dashboard;
